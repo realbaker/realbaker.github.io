@@ -1,0 +1,148 @@
+// The Sass comment elf was here
+/* The CSS comment elf was here */
+                                                                       
+// VARIABLES ========================================================= 
+
+$dark-red: #3F2427;
+$green: #576658;
+$light-green: lighten($green, 30%);
+$mauve: #AF737B;
+$light-mauve: lighten($mauve, 30%);
+                                                                       
+// MIXINS AND PLACEHOLDERS =========================================== 
+
+%ir {                                        
+  text-indent: 100%;                                                   
+  white-space: nowrap;                                                 
+  overflow: hidden; 
+}
+
+@mixin prefix($property, $value) {
+  -webkit-#{$property}: $value;
+  -moz-#{$property}: $value;
+  -o-#{$property}: $value; 
+  #{$property}: $value; 
+}
+
+@mixin button($bg) {
+  @include prefix(border-radius, 8px);                                                     
+  background: $bg;                                                 
+  border: none;                                                        
+  border-bottom: 4px solid darken($bg, 10%);                                       
+  color: #FFF;                                                         
+  font-size: 20px;                                                     
+  font-weight: 600;                                                    
+  padding: 20px 35px;                                                  
+  text-shadow: 0 1px 1px rgba(0,0,0,0.75);                             
+  text-transform: uppercase;        
+  &:hover {                           
+    background: darken($bg, 10%);                                  
+  }      
+  &:active {                                               
+    background: lighten($bg, 10%);                                  
+  }
+}
+                                                                       
+// GLOBAL & BOOTSTRAP OVERRIDES ====================================== 
+                                                                       
+body {                                                                 
+  font-family: "Open Sans", sans-serif;                                
+  font-weight: 400;                                                    
+}                                                                      
+.banner {                                                              
+  background-color: #CCC;                                              
+  color: #FFF;                                                         
+  margin: 0 auto 20px;                                                 
+  max-width: 300px;                                                    
+  padding: 20px;                                                       
+  position: relative;                                                  
+  text-align: center;                                                  
+  width: 75%;                                                          
+  height: 40px;                                                        
+}                                                                      
+section {                                                              
+  padding: 40px 0;                                                     
+}   
+
+img {
+  background-color: #ffffff;
+  @include prefix(box-shadow, 0 0 4px rgba(0,0,0,.4));
+  max-width: 94%;
+  padding: 3%;
+}                                                                   
+                                                                       
+// NAV & HEADER ====================================================== 
+                                                                       
+nav {                                                                  
+  background: $dark-red url('../img/noise.png');                         
+}                                                                      
+.nav {                                                                 
+  margin: 5px 0;                                                       
+  position: relative;                                                  
+}                                                                      
+.logo {                                                                                                       
+  background-color: $green;                                           
+  padding: 20px 10px;                                                  
+  position: absolute;  
+  &:after {                                                                                           
+    border-color: $green $green transparent $green;                   
+    border-style: solid;                                                 
+    border-width: 0 88px 20px 88px;                                      
+    content: "";                                                         
+    position: absolute;                                                  
+    bottom: -20px;                                                       
+    left: 0;                                                             
+    width: 0;                                                            
+    height: 0;                                                           
+  }
+  span {                                                           
+    background: url('../img/logo.png');                                  
+    display: block;                                                      
+    width: 156px;                                                        
+    height: 59px;                                                        
+    @extend %ir;  
+    @include prefix(transform, rotate(-6deg));                                           
+  }                                                   
+}                                                                                                                                           
+                                                                       
+.hero-unit {                                                           
+  background: url('../img/wall.jpg') no-repeat left bottom;                                
+  -webkit-background-size: cover;                                      
+  -moz-background-size: cover;                                         
+  -o-background-size: cover;                                           
+  background-size: cover;                                  
+  margin-bottom: 0;                    
+  @include prefix(border-radius, 0);  
+  .btn {                                  
+    @include button($green);                                   
+  }                                                     
+}                                                                                                                                                                                                                
+                                                                       
+// ABOUT SECTION  ==================================================== 
+
+.section-about {
+  background: $light-green;
+  .banner {
+    background: $green;
+  }
+  .btn {
+    @include button($green);
+  }
+}
+                                                                       
+// BIKES SECTION ===================================================== 
+
+.section-bikes {
+  background: $light-mauve;
+  .banner {
+    background: $mauve;
+  }
+  .btn {
+    @include button($mauve);
+  }
+}
+                                                                       
+// FOOTER ============================================================ 
+                                                                       
+// MEDIA QUERIES ===================================================== 
+                                                                       
