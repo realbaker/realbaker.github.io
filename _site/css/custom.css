@@ -1,0 +1,187 @@
+/* The CSS comment elf was here */
+/* line 14, scss/custom.scss */
+.logo span {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* line 48, scss/custom.scss */
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+/* line 52, scss/custom.scss */
+.banner {
+  background-color: #CCC;
+  color: #FFF;
+  margin: 0 auto 20px;
+  max-width: 300px;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+  width: 75%;
+  height: 40px;
+}
+
+/* line 63, scss/custom.scss */
+section {
+  padding: 40px 0;
+}
+
+/* line 67, scss/custom.scss */
+img {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  -o-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  max-width: 94%;
+  padding: 3%;
+}
+
+/* line 76, scss/custom.scss */
+nav {
+  background: #3f2427 url("../img/noise.png");
+}
+
+/* line 79, scss/custom.scss */
+.nav {
+  margin: 5px 0;
+  position: relative;
+}
+
+/* line 83, scss/custom.scss */
+.logo {
+  background-color: #576658;
+  padding: 20px 10px;
+  position: absolute;
+}
+/* line 87, scss/custom.scss */
+.logo:after {
+  border-color: #576658 #576658 transparent #576658;
+  border-style: solid;
+  border-width: 0 88px 20px 88px;
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 0;
+  height: 0;
+}
+/* line 98, scss/custom.scss */
+.logo span {
+  background: url("../img/logo.png");
+  display: block;
+  width: 156px;
+  height: 59px;
+  -webkit-transform: rotate(-6deg);
+  -moz-transform: rotate(-6deg);
+  -o-transform: rotate(-6deg);
+  transform: rotate(-6deg);
+}
+
+/* line 108, scss/custom.scss */
+.hero-unit {
+  background: url("../img/wall.jpg") no-repeat left bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-bottom: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+/* line 116, scss/custom.scss */
+.hero-unit .btn {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  background: #576658;
+  border: none;
+  border-bottom: 4px solid #404a40;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 20px 35px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
+  text-transform: uppercase;
+}
+/* line 38, scss/custom.scss */
+.hero-unit .btn:hover {
+  background: #404a40;
+}
+/* line 41, scss/custom.scss */
+.hero-unit .btn:active {
+  background: #6e8270;
+}
+
+/* line 123, scss/custom.scss */
+.section-about {
+  background: #a4b2a5;
+}
+/* line 125, scss/custom.scss */
+.section-about .banner {
+  background: #576658;
+}
+/* line 128, scss/custom.scss */
+.section-about .btn {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  background: #576658;
+  border: none;
+  border-bottom: 4px solid #404a40;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 20px 35px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
+  text-transform: uppercase;
+}
+/* line 38, scss/custom.scss */
+.section-about .btn:hover {
+  background: #404a40;
+}
+/* line 41, scss/custom.scss */
+.section-about .btn:active {
+  background: #6e8270;
+}
+
+/* line 135, scss/custom.scss */
+.section-bikes {
+  background: #e7d4d7;
+}
+/* line 137, scss/custom.scss */
+.section-bikes .banner {
+  background: #af737b;
+}
+/* line 140, scss/custom.scss */
+.section-bikes .btn {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  background: #af737b;
+  border: none;
+  border-bottom: 4px solid #985760;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 20px 35px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
+  text-transform: uppercase;
+}
+/* line 38, scss/custom.scss */
+.section-bikes .btn:hover {
+  background: #985760;
+}
+/* line 41, scss/custom.scss */
+.section-bikes .btn:active {
+  background: #c2939a;
+}
